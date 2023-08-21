@@ -11,9 +11,6 @@
     box-sizing: border-box;
 }
 
-html {
-    background-color: aqua;
-}
 
 body {
     /*
@@ -37,6 +34,7 @@ header{
     display: inline-block;
     width: 100vw;
     height: 120px;
+    background-color: black;
     position: fixed;
     top: 0;
     z-index: 3;
@@ -52,21 +50,22 @@ header{
 .countdown, main {
     color: #f0f0f4;
     padding:  15px;
-    padding-top: 120px; 
+     
 }
 
 .countdown {
-    height: 100vh;
+    padding-top: 120px;
     text-align: center;
 }
 
 .bigtext {
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
 }
+
 .smalltext{
     padding-top: 15px;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
 }
 
 .timebox{
@@ -74,7 +73,7 @@ header{
     flex-wrap: wrap;
     margin: auto 20%;
     justify-content: center;
-   padding-top: 10vh;
+   padding-top: 20px;
 }
 
 .box {
@@ -106,20 +105,19 @@ header{
 }
 
 .countdown footer a{
-    position: absolute;
-    bottom: 10px;
+    display: none;
     left: calc(50% - 100px);
     right: calc(50% - 100px);
     text-align: center;
     color: #a2a2a2;
     text-decoration: none;
 }
-
+/*
 main{
     height: 90vh;
 }
-
-main .about {
+*/
+main * {
     text-align: justify;
 }
 
@@ -159,8 +157,7 @@ main .about {
     color : black;
 }
 
-footer{
-    height: 10vh;
+body>footer{
     padding: 10px 20px;
     color: #d0d0d4;
     font-size: .8rem;
@@ -198,28 +195,23 @@ footer a{
     }
 
     main {
-        border: red solid 3px;
-        vertical-align: top;
+        border: red 3px solid; 
+        display: flex;
     }
 
-    main>section{
-        display: inline-block;
-        border: white 2px solid;
-        padding: 30px;
-        margin: auto;
-    }
 
-    .about {
-        width: 50vw;
+    main>* {
+        padding: 5vw;
     }
 
     .contact {
-        width: 40vw;
         min-width: 310px;
     }
 
-    .contact-card {
-        padding-top: 20px;
+   
+
+    .socials{
+        display: none;
     }
 
     .socials a:hover {
