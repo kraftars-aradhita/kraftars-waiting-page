@@ -225,7 +225,6 @@ footer a{
     }
 
     main {
-        border: red 3px solid; 
         display: flex;
     }
 
