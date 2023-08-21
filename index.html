@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/eca227b50d.js" crossorigin="anonymous"></script>
+    <script src="js/countdown.js"></script>
     <title>Welcome to Kraftars</title>
 </head>
 <body>
@@ -20,19 +21,19 @@
         <div class="timebox">
 
             <div class="days box">
-                <p class="day value">34</p>
+                <p class="value" id="day">34</p>
                 <p class="time-caption">Days</p>
             </div>
             <div class="hours box">
-                <p class="hour value">34</p>
+                <p class="value" id="hour">34</p>
                 <p class="time-caption">Hours</p>
             </div>
             <div class="minutes box">
-                <p class="minute value">34</p>
+                <p class="value" id="minute">34</p>
                 <p class="time-caption">Minutes</p>
             </div>
             <div class="seconds box">
-                <p class="second value">34</p>
+                <p class="value" id="second">34</p>
                 <p class="time-caption">Seconds</p>
             </div>
 
@@ -45,26 +46,48 @@
     </article>
 
     <main id="main">
-        <h1>A few words about our awesome company</h1>
-        <p class="about">
-            Three young visionaries launch a creative digital marketing company, blending innovation and strategic prowess. Committed to propelling businesses forward with insights, they're the guiding light to online success.
+        <section class="about">
+            <h1>A few words about our awesome company</h1>
+            <p>
+                Three young visionaries launch a creative digital marketing company, blending innovation and strategic prowess. Committed to propelling businesses forward with insights, they're the guiding light to online success.
+            </p>
+        </section>
+
+        <section class="contact">
+            <h2>Contact Us</h2>
+        <p class="contact-card">
+            <a href="mailto:ayanghoshal.kraftars@gmail.com">
+                <i class="fa-solid fa-envelope-open"></i> ayanghoshal.kraftars@gmail.com
+            </a>
+            
         </p>
-        <h2>Contact Us</h2>
-        <p>
-            <i class="fa-sharp fa-solid fa-at"></i> ayanghoshal.kraftars@gmail.com
+        <p class="contact-card">
+            <a href="tel:+919147002014">
+                <i class="fa-solid fa-mobile"></i> (+91) 91470 02014
+            </a>
         </p>
-        <p>
-            <i class="fa-solid fa-mobile"></i> (+91) 91470 02014
-        </p>
-        <p>
+        <p class="contact-card">
             <i class="fa-solid fa-location-dot"></i> Golf Green, Kolkata (pin - 700032) 
         </p>
+        </section>
+
+        <section class="socials">
+            <div id="twitter">
+                <a href="http://twitter.com"><i class="fa-brands fa-2xl fa-x-twitter"></i></a>
+            </div>
+            <div id="instagram">
+                <a href="http://instagram.com"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+            </div>
+            <div id="facebook">
+                <a href="http://facebook.com"><i class="fa-brands fa-facebook-f fa-2xl"></i></a>
+            </div>
+        </section>
 
     </main>
 
     <footer>
         <p>@2023 All Rights Reserved</p>
-        <p>maintained by <a href="http://github.com/aradhita2001">aradhita</a></p>
+        <p>Maintained by <a href="http://github.com/aradhita2001">aradhita</a></p>
     </footer>
     
 </body>
