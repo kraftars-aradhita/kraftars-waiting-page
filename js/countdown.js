@@ -27,7 +27,8 @@ let x = setInterval(function() {
   document.getElementById("hour").innerHTML = hours;
   document.getElementById("minute").innerHTML = minutes;
   document.getElementById("second").innerHTML = seconds;
-  console.log(days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ");
+  
   
 }, 1000);
+
+

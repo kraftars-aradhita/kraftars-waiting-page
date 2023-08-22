@@ -1,7 +1,2 @@
-let screenWidth = screen.width;
-
-if(screenWidth < 768){
-    console.log("true");
-    const myElement = document.getElementById("bg");
-    console.log(myElement);
-}
+let vid = document.getElementById("background_video");
+vid.src = "videos/bg_slow.mp4";
