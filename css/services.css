@@ -1,0 +1,36 @@
+.services{
+    max-width: 1000px;
+    margin: auto;
+}
+
+.service-container ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.service-container li {
+    width: 50%;
+    text-align: center;
+    list-style: none;
+}
+
+.services a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 600px) {
+
+    .service-container ul {
+        flex-direction: column;
+    }
+
+    .service-container li {
+        width: 100%;
+        text-align: center;
+        list-style: none;
+    }
+    
+}

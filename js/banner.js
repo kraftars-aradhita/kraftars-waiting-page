@@ -1,84 +1,26 @@
-let currentBanner = 0;
-let banners = document.getElementsByClassName("banner");
+let slideIndex = 1;
+showSlides(slideIndex);
 
-
-function swipeLeft(){
-    document.getElementById("banner" + (currentBanner+1)).classList.add("invisible");
-    document.getElementById("banner" + (currentBanner)).classList.remove("invisible");
-    currentBanner--;
-
-    if(currentBanner === 0){
-        document.getElementById("left").classList.add("invisible");
-    }
-    else{
-        document.getElementById("left").classList.remove("invisible");
-    }
-
-    if(currentBanner === banners.length - 1){
-        document.getElementById("right").classList.add("invisible");
-    }
-    else{
-        document.getElementById("right").classList.remove("invisible");
-    }
+function plusSlides(n) {
+  showSlides(slideIndex += n);
 }
 
-function swipeRight(){
-    document.getElementById("banner" + (currentBanner+1)).classList.add("invisible");
-    document.getElementById("banner" + (currentBanner+2)).classList.remove("invisible");
-    currentBanner++;
-
-    if(currentBanner === 0){
-        document.getElementById("left").classList.add("invisible");
-    }
-    else{
-        document.getElementById("left").classList.remove("invisible");
-    }
-
-    if(currentBanner === banners.length - 1){
-        document.getElementById("right").classList.add("invisible");
-    }
-    else{
-        document.getElementById("right").classList.remove("invisible");
-    }
+function currentSlide(n) {
+  showSlides(slideIndex = n);
 }
 
-document.addEventListener("load", function(){
-    setTimeout(()=> {
-        document.getElementById("preloader").remove();
-    } , 50); // after 5 sec it will remove.
-});
-
-
-window.onload=function(){
-    const element = document.getElementById("preloader");
-    element.remove();
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
 }
-
-
-
-
-
-
-function swipeLeft2() {
-    console.log("left");
-    document.getElementById("banner1").classList.remove("invisible");
-    document.getElementById("banner2").classList.add("invisible");
-    document.getElementById("left").classList.add("invisible");
-    document.getElementById("right").classList.remove("invisible");
-}
-
-function swipeRight2() {
-    console.log("right");
-    document.getElementById("banner1").classList.add("invisible");
-    document.getElementById("banner2").classList.remove("invisible");
-    document.getElementById("left").classList.remove("invisible");
-    document.getElementById("right").classList.add("invisible");
-}
-
-setInterval(function() {
-
-    
-    
-    
-    
-  }, 10);

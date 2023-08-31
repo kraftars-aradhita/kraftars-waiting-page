@@ -1,0 +1,121 @@
+footer>section{
+    margin-top: 20px;
+    padding: auto 10px;
+}
+
+.contact-card{
+    text-align: left;
+}
+
+.contact-card {
+    padding-top: 10px;
+    vertical-align: middle;
+}
+
+.contact-card a {
+    text-decoration: none;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: end;
+}
+
+.socials div{
+    margin: 20px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.socials a{
+    color : black;
+}
+
+footer{
+    padding: 10px 20px;
+    font-size: .8rem;
+}
+
+footer a{
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+footer{
+    max-width: 1000px;
+    margin: auto;
+    align-items: end;
+}
+
+.socials div{
+    margin:auto 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.socials a:hover {
+    font-size: 1.02em;
+}
+
+.info {
+   vertical-align: bottom;
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    footer>section{
+        margin-top: 20px;
+        padding: auto 10px;
+    }
+    
+    .contact-card{
+        text-align: left;
+    }
+    
+    .contact-card {
+        padding-top: 10px;
+        vertical-align: middle;
+    }
+    
+    .contact-card a {
+        text-decoration: none;
+    }
+    
+    .socials {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: end;
+    }
+    
+    .socials div{
+        margin: 20px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;;
+        border-radius: 50%;
+        text-align: center;
+    }
+    
+    .socials a{
+        color : black;
+    }
+    
+    footer{
+        padding: 10px 20px;
+        font-size: .8rem;
+    }
+    
+    footer a{
+        text-decoration: none;
+    }    
+}

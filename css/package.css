@@ -1,0 +1,38 @@
+.packages {
+    align-items: stretch; /* Equal height */
+    height: 100%;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .packages header {
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .package-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .package {
+    border: 2px red solid;
+    padding: 5%;
+    width: 30%;
+
+  }
+
+  .package-name{
+    font-size: 1.2rem;
+  }
+
+  .package-price {
+    font-size: 2rem;
+  }
+
+
+
+
+  

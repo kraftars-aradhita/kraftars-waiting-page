@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#preloader{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:#000;
+    background-size: 20%;
+    width: 100vw;
+    height: 10000000px;
+    z-index: 100;
+}
+
+#preloader>img {
+    position: fixed;
+    top: 40%;
+    left: 40%;
+    width: 20%;
+
+}
+
+header {
+    position: relative;
+    display: flex;
+    overflow-x: hidden;
+}
+
+aside {
+    position: fixed;
+    z-index: 3;
+    width: 100vw;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.scrolled {
+    background-color: azure;
+}
+
+
+aside>img {
+    width: 25vw;
+    position: relative;
+    top: -20px;
+    left: 20px;
+
+}
+
+nav{
+    margin: auto;
+}
+
+nav>ul {
+    min-width: 400px;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+nav>ul>li{
+    flex-basis: 200px;
+}
+
+.switch {
+    position: absolute;
+    z-index: 2;
+    width: 20px;
+    height: 100%;
+    background-color: rgb(11,11,11,.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.invisible {
+    display: none;
+}
+
+.switch p {
+    margin: auto 0;
+}
+
+#left{
+    left: 0;
+}
+
+#right {
+    right: 0;
+}
+
+.banner{
+    width: 100vw;
+    height: 70vh;
+    flex-shrink: 0;
+    padding: 300px;
+}
+
+
+#banner1 {
+    background-color: teal;
+}
+
+#banner2 {
+    background-color: gray;
+}
+
+#banner3 {
+    background-color: goldenrod;
+}
+
+#banner4 {
+    background-color: brown;
+}
+
+main {
+    height: 180vh;
+    background-color: aquamarine;
+}
+
+footer {
+    background-color: blue;
+    height: 200px;
+}
