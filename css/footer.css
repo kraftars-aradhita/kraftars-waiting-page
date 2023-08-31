@@ -31,10 +31,6 @@ footer>section{
     text-align: center;
 }
 
-.socials a{
-    color : black;
-}
-
 footer{
     padding: 10px 20px;
     font-size: .8rem;
@@ -47,75 +43,30 @@ footer a{
     font-style: italic;
 }
 
-footer{
-    max-width: 1000px;
-    margin: auto;
-    align-items: end;
-}
+@media only screen and (min-width: 768px) {
 
-.socials div{
-    margin:auto 20px;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;;
-    border-radius: 50%;
-    text-align: center;
-}
-
-.socials a:hover {
-    font-size: 1.02em;
-}
-
-.info {
-   vertical-align: bottom;
-}
-
-
-@media screen and (max-width: 768px) {
-    
-    footer>section{
-        margin-top: 20px;
-        padding: auto 10px;
-    }
-    
-    .contact-card{
-        text-align: left;
-    }
-    
-    .contact-card {
-        padding-top: 10px;
-        vertical-align: middle;
-    }
-    
-    .contact-card a {
-        text-decoration: none;
-    }
-    
-    .socials {
+    footer{
         display: flex;
-        justify-content: space-evenly;
+        flex-direction: row-reverse;
+        justify-content: space-between;
         align-items: end;
     }
-    
+
     .socials div{
-        margin: 20px;
-        width: 50px;
-        height: 50px;
-        line-height: 50px;;
+        margin:auto 20px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;;
         border-radius: 50%;
         text-align: center;
     }
-    
-    .socials a{
-        color : black;
+
+    .socials a:hover {
+        font-size: 1.02em;
     }
-    
-    footer{
-        padding: 10px 20px;
-        font-size: .8rem;
+
+    .info {
+       vertical-align: bottom;
     }
-    
-    footer a{
-        text-decoration: none;
-    }    
+  
 }
