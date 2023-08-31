@@ -5,11 +5,12 @@ body {
 
 .mySlides {
     display: none;
-    min-height: 200px;
+    max-width: 100vw;
 }
 
-img {
+.banner img {
     vertical-align: middle;
+    max-width: 100%;
 }
 
 /* Slideshow container */
@@ -105,6 +106,6 @@ img {
 
     .mySlides {
         display: none;
-        min-height: 20px !important;
+        max-width: 100vw !important;
     }
 }
