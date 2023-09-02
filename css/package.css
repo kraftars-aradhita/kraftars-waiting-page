@@ -18,7 +18,7 @@
   .packages header {
     max-width: 700px;
     margin: auto;
-    text-align: center;
+    text-align: justify;
   }
 
   .package-container {
