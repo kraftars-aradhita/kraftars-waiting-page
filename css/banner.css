@@ -101,6 +101,12 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+    .banner video {
+        margin-top: 0px !important;
+    }
+}
+
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
 
