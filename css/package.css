@@ -28,10 +28,20 @@
   }
 
   .package {
-    border: 2px red solid;
-    padding: 5%;
-    width: 30%;
+    padding: 3%;
+    width: 32%;
+    text-align: center;
 
+  }
+
+  .package-heading {
+    border: 2px solid goldenrod;
+    border-bottom: 1px solid goldenrod;
+  }
+
+  .package-details {
+    border: 2px solid goldenrod;
+    border-top: 1px solid goldenrod;
   }
 
   .package-name{
@@ -40,6 +50,12 @@
 
   .package-price {
     font-size: 2rem;
+  }
+
+  .package-details li {
+    list-style: none;
+    text-align: center;
+    padding: 10px 0;
   }
 
 
