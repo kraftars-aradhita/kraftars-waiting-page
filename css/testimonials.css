@@ -5,6 +5,11 @@
     margin: auto;
 }
 
+.testimonials>h2 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
 .testimonial-container {
     max-width: 1000px;
     position: relative;
