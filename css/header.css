@@ -34,12 +34,17 @@
   header .navigation .menu-list {
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
     align-items: center;
     width: 45%;
     margin: auto 20px auto 0;
   }
   
+  header .navigation .menu-list li{
+    align-items: center;
+    margin: auto 20px;
+  }
+
   header .navigation .humbarger {
     margin-right: 20px;
     display: none;
