@@ -19,6 +19,7 @@
     max-width: 700px;
     margin: auto;
     text-align: justify;
+    padding: 5px 10px;
   }
 
   .package-container {
@@ -63,6 +64,10 @@
 
   @media screen and (max-width: 768px) {
     
+    .packages>header>h2 {
+      font-size: 30px !important;
+    }
+
     .package-container {
       display: block;
     }
