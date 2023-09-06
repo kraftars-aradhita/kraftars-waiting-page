@@ -1,29 +1,27 @@
 .testimonials {
     align-items: stretch; /* Equal height */
     height: 100%;
-    max-width: 1000px;
-    margin: auto;
-    padding: 50px;
 }
 
 .testimonials>h2 {
     font-size: 36px;
     font-weight: 600;
+    text-align: center;
 }
 
 .testimonial-container {
     max-width: 1000px;
+    margin: auto;
+    padding: 50px;
     position: relative;
     margin: auto;
 }
-
 
 .testimonial {
     width: 70%;
     margin: auto;
     padding-top: 50px;
 }
-
 
 .customer-id {
     display: flex;
@@ -48,9 +46,6 @@
     text-align: justify;
 }
 
-
-
-
 @media screen and (max-width: 768px) {
 
     .testimonials h2 {
@@ -67,28 +62,11 @@
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .testimonial {
     display: none;
     min-height: 200px;
     vertical-align: middle;
 }
-
 
 /* Next & previous buttons */
 .prev,
@@ -110,6 +88,11 @@
 /* Position the "next button" to the right */
 .next {
     right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
     border-radius: 3px 0 0 3px;
 }
 
