@@ -59,15 +59,66 @@
       </div>
 
       <main>
-        <form action="https://script.google.com/macros/s/AKfycbwl25XgEeqQPfJGl0Y7CpncUWOso91mIF7jd0oBJti2AD2IpW18kBy89yXSY2IeUSsr/exec" method="post">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="myname@company.com">
-            <label for="phone">Contact Number</label>
-            <input type="tel" name="number" id="phone" placeholder="9876543210">
-            <label for="message">Enter Your Query</label>
-            <textarea name="message" id="message" placeholder="I want to promote my business" rows="5"></textarea>
-            <input type="submit">
-        </form>
+        <form id="contact-form">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="myname@company.com" required>
+          
+          <label for="phone">Contact Number</label>
+          <input type="tel" name="number" id="phone" placeholder="9876543210" pattern="[6-9][0-9]{9}" required>
+          
+          <label for="message">Enter Your Query</label>
+          <textarea name="message" id="message" placeholder="I want to promote my business" rows="5" required></textarea>
+          
+          <button type="submit" id="sendData">Submit</button>
+      </form>
+  
+      <script>
+          document.addEventListener('DOMContentLoaded', function() {
+              const contactForm = document.getElementById('contact-form');
+              contactForm.addEventListener('submit', function(event) {
+                  event.preventDefault(); // Prevent the default form submission
+                  
+                  // Collect form data
+                  const email = document.getElementById('email').value;
+                  const number = document.getElementById('phone').value;
+                  const message = document.getElementById('message').value;
+                  
+                  // Create an object with the form data
+                  const formData = {
+                      email,
+                      number,
+                      message
+                  };
+                  
+                  // Send the form data to your server or Google Apps Script
+                  sendDataToServer(formData);
+              });
+              
+              // Function to send data to the server or Google Apps Script
+              function sendDataToServer(formData) {
+                  // Replace 'YOUR_SCRIPT_URL' with the URL of your server script or Google Apps Script
+                  fetch('https://script.google.com/macros/s/AKfycbwFm9dvPjoBPQIS9Kes3CocaYjO58NduBzCRFmO5y0xA6ScaqxIDv1IfOxBBmYTlFPBeQ/exec', {
+                      method: 'POST',
+                      mode: 'no-cors',
+                      body: JSON.stringify(formData),
+                      headers: {
+                          'Content-Type': 'application/json'
+                      }
+                  })
+                  .then(response => response.text())
+                  .then(result => {
+                      // Handle the result (e.g., show a success message)
+                      console.log(result);
+                      // Optionally, you can reset the form
+                      contactForm.reset();
+                  })
+                  .catch(error => {
+                      // Handle errors
+                      console.error(error);
+                  });
+              }
+          });
+      </script>
       </main>
 
 
