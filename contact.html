@@ -19,36 +19,38 @@
   <link rel="stylesheet" href="css/footer.css">
   <script src="https://kit.fontawesome.com/eca227b50d.js" crossorigin="anonymous"></script>
 
+  <script src="js/contact.js"></script>
+
   <link rel="shortcut icon" href="images/favicon.png" />
   <title>Kraftars</title>
 </head>
 
 <body>
 
-    <header class="navbar">
-        <nav class="navigation">
-    
-          <!-- Logo -->
-          <div class="logo">
-            <h1><img id="company-logo" src="images/logo.png" alt="company logo"></h1>
-          </div>
-          
-          <!-- Navigation -->
-          <ul class="menu-list">
-            <!-- <li><a href="#">Home</a></li> -->
-            <li><a href="#about">About</a></li>
-            <!-- <li><a href="#services">Services</a></li> -->
-            <li><a href="#package">Packages</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-    
-          <div class="humbarger">
-            <div class="bar"></div>
-            <div class="bar2 bar"></div>
-            <div class="bar"></div>
-          </div>
-        </nav>
-      </header>
+  <header class="navbar">
+    <nav class="navigation">
+
+      <!-- Logo -->
+      <div class="logo">
+        <h1><img id="company-logo" src="images/logo.png" alt="company logo"></h1>
+      </div>
+      
+      <!-- Navigation -->
+      <ul class="menu-list">
+        <!-- <li><a href="#">Home</a></li> -->
+        <li><a href="#about">About</a></li>
+        <!-- <li><a href="#services">Services</a></li> -->
+        <li><a href="#package">Packages</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="humbarger">
+        <div class="bar"></div>
+        <div class="bar2 bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+  </header>
 
       <div class="banner">
 
@@ -72,64 +74,15 @@
           <button type="submit" id="sendData">Submit</button>
       </form>
   
-      <script>
-          document.addEventListener('DOMContentLoaded', function() {
-              const contactForm = document.getElementById('contact-form');
-              contactForm.addEventListener('submit', function(event) {
-                  event.preventDefault(); // Prevent the default form submission
-                  
-                  // Collect form data
-                  const email = document.getElementById('email').value;
-                  const number = document.getElementById('phone').value;
-                  const message = document.getElementById('message').value;
-                  
-                  // Create an object with the form data
-                  const formData = {
-                      email,
-                      number,
-                      message
-                  };
-                  
-                  // Send the form data to your server or Google Apps Script
-                  sendDataToServer(formData);
-              });
-              
-              // Function to send data to the server or Google Apps Script
-              function sendDataToServer(formData) {
-                  // Replace 'YOUR_SCRIPT_URL' with the URL of your server script or Google Apps Script
-                  fetch('https://script.google.com/macros/s/AKfycbwFm9dvPjoBPQIS9Kes3CocaYjO58NduBzCRFmO5y0xA6ScaqxIDv1IfOxBBmYTlFPBeQ/exec', {
-                      method: 'POST',
-                      mode: 'no-cors',
-                      body: JSON.stringify(formData),
-                      headers: {
-                          'Content-Type': 'application/json'
-                      }
-                  })
-                  .then(response => response.text())
-                  .then(result => {
-                      // Handle the result (e.g., show a success message)
-                      console.log(result);
-                      // Optionally, you can reset the form
-                      contactForm.reset();
-                  })
-                  .catch(error => {
-                      // Handle errors
-                      console.error(error);
-                  });
-              }
-          });
-      </script>
       </main>
-
-
 
       <footer>
     
         <section class="contact" id="contact">
           <h2>Contact Us</h2>
           <p class="contact-card">
-            <a href="mailto:info.kraftars@gmail.com">
-              <i class="fa-solid fa-envelope-open"></i> info.kraftars@gmail.com
+            <a href="mailto:contact@kraftars.in">
+              <i class="fa-solid fa-envelope-open"></i> contact@kraftars.in
             </a>
     
           </p>
@@ -144,14 +97,14 @@
         </section>
     
         <section class="socials">
-          <div id="twitter" style="display: none;">
-            <a href="http://twitter.com"><i class="fa-brands fa-2xl fa-x-twitter"></i></a>
+          <div id="linkedin">
+            <a href="https://www.linkedin.com/company/kraftars/" target="_blank" rel="noopener"><i class="fa-brands fa-2xl fa-linkedin-in"></i></a>
           </div>
           <div id="instagram">
-            <a href="https://www.instagram.com/kraftars_digital/"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+            <a href="https://www.instagram.com/kraftars_digital/" target="_blank" rel="noopener"><i class="fa-brands fa-instagram fa-2xl"></i></a>
           </div>
           <div id="facebook">
-            <a href="https://www.facebook.com/kraftars/"><i class="fa-brands fa-facebook-f fa-2xl"></i></a>
+            <a href="https://www.facebook.com/kraftars/" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f fa-2xl"></i></a>
           </div>
         </section>
     
