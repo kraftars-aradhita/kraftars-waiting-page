@@ -4,6 +4,11 @@
       box-sizing: border-box;
   }
 
+  header {
+    color: #f30c0c !important;
+    background: #fec85b !important;
+  }
+
   #company-logo {
     height: 75px;
   }
@@ -17,7 +22,7 @@
     min-height: 12vh;
     min-width: 100%;
     z-index: 10;
-    background: #0f1423;
+    background: #fec85b;
     /* border-bottom: 2px solid #0c2d48; */
   }
   
@@ -26,7 +31,7 @@
   }
   
   header .navigation .logo h1{
-    color: #d1f4f0;
+    color: #f30c0c;
     font-size: 30px;
     line-height: 38px;
   }
@@ -54,11 +59,11 @@
     width: 30px;
     height: 2px;
     margin: 7px;
-    background: #b1d4e0;
+    background: #f30c0c;
    }
   
   header .navigation .menu-list li a {
-    color: #b1d4e0;
+    color: #f30c0c;
     font-size: 1.25rem;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -96,7 +101,7 @@
       position: absolute;
       top: 12vh;
       min-width: 100%;
-      background: rgba(15, 20, 35, 0.99);
+      background: #fec85b;
       text-align: center;
       display: none;
     }

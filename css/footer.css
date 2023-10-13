@@ -1,6 +1,6 @@
 footer {
-    background-color: #0f1423;
-    color: #d1f4f0;
+    background-color: #fec85b;
+    color: #f30c0c;
 }
 
 footer>section{
@@ -42,7 +42,7 @@ footer{
 }
 
 footer a{
-    color: #b1d4e0;
+    color: #f30c0c;
     text-decoration: none;
     font-size: 1rem;
     font-style: italic;
