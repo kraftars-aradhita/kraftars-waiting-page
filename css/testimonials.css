@@ -3,10 +3,16 @@
     height: 100%;
 }
 
+.testimonial-bg img{
+    position: absolute;
+    width: 100vw;
+}
+
 .testimonials>h2 {
     font-size: 36px;
     font-weight: 600;
     text-align: center;
+    margin: 50px 0 10px 0;  
 }
 
 .testimonial-container {
@@ -15,6 +21,7 @@
     padding: 50px;
     position: relative;
     margin: auto;
+    background-image: url("images/testimonial-bg.png");
 }
 
 .testimonial {
