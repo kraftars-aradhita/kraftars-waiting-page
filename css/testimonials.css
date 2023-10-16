@@ -6,13 +6,19 @@
 .testimonial-bg img{
     position: absolute;
     width: 100vw;
+    opacity: .4;
+    
 }
 
 .testimonials>h2 {
-    font-size: 36px;
-    font-weight: 600;
+    position: relative;
     text-align: center;
-    margin: 50px 0 10px 0;  
+	font-family: impact;
+	font-size: 60px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin: 50px 0 30px 0;
 }
 
 .testimonial-container {
