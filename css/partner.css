@@ -12,3 +12,14 @@
     display: block;
     margin: auto;
 }
+
+@media (max-width:767px) {
+	.partners h2 {
+		font-size: 30px;
+	}
+	.partner-container {
+		width: 95%;
+		border-radius: 0;
+		padding: 0;
+	}
+}
